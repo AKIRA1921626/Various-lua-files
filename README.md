@@ -7,4 +7,10 @@
 # Individual_object_join.lua
 2026/02/17更新  
 
-二次配布可、改変可、クレジット不要
+# easing.lua
+2026/08/08更新
+
+# entry_helper.lua
+2026/08/12更新
+
+二次配布可、改変可、クレジット#不要

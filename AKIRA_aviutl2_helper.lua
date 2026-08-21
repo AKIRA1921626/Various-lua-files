@@ -205,8 +205,15 @@ function M.get_lines_from_text()
         return lines
     end
 
+    --[[
     -- 改行コード(\\r\\n または \\n)で区切ってテーブルへ格納
     for line in text:gmatch("[^\\r\\n]+") do
+        table.insert(lines, line)
+    end
+    ]]
+    
+    text = text:gsub("\\r\\n", "\\n")
+    for line in (text .. "\\n"):gmatch("(.-)\\n") do
         table.insert(lines, line)
     end
 
